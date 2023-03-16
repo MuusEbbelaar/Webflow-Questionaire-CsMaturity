@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Success Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;a
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  select {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: #005fa3;
+  }
+  #score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<form id="customer-success-form">
+  <h3>Metrics and Data</h3>
+  <label for="q1">How does your company use data analytics, AI, or machine learning to improve customer success?</label>
+<select id="q1" name="question1" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: Customer success technology is not used to automate or optimize customer interactions.</option>
+  <option value="2">: Customer success technology is used to automate basic customer interactions, but not to optimize them.</option>
+  <option value="3">: Customer success technology is used to automate and optimize customer interactions, and is integrated with other systems and data to inform decision-making and strategy.</option>
+</select>
+  
+ <label for="q2">How does your company measure and track customer success metrics?</label>
+<select id="q2" name="question2" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: Actions are determined reactively, based on customer complaints or issues</option>
+  <option value="2">: Actions are determined proactively, but using general playbooks that are not tailored to the specific needs of each customer.</option>
+  <option value="3">: Actions are determined proactively, based on continuous monitoring of customer health metrics and analysis of customer data. The company uses advanced data analytics and machine learning to determine personalized next best actions for each customer, ensuring that the specific needs of each customer are addressed in order to improve customer health and mitigate risk of churn.</option>
+</select>
+  
+ <label for="q3">How does your company use customer data to segment, target, and personalize customer interactions?</label>
+<select id="q3" name="question3" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: Customer success is not measured or tracked at a granular level.</option>
+  <option value="2">: Customer success is measured and tracked at a basic level, such as retention rate or customer satisfaction.</option>
+  <option value="3">: Customer success is measured and tracked at a granular level, such as by segment, persona, or use case, and is used to inform decision-making and strategy.</option>
+</select>
+
+ <label for="q4">How does your company use customer feedback to drive customer success?</label>
+<select id="q4" name="question4" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: Data analytics, AI, or machine learning are not used to improve customer success.</option>
+  <option value="2">: Data analytics are used to analyze customer data, but not to inform customer success strategies.</option>
+  <option value="3">: Data analytics, AI, or machine learning are used to analyze customer data and inform customer success strategies, such as identifying at-risk customers, predicting churn, and personalizing interactions.</option>
+</select>
+  
+<h3>Operations and Automation</h3>
+  <label for="q5">How does your company use customer success technology to automate and optimize customer interactions?</label>
+<select id="q5" name="question5" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: Customer feedback is not used to drive customer success.</option>
+  <option value="2">: Customer feedback is used to inform customer success, but not to drive it.</option>
+  <option value="3">: Customer feedback is used to drive customer success through a dedicated process and cross-functional team.</option>
+</select>
+  
+ <label for="q6">How does your company use customer data to segment, target and personalize customer interactions?
+</label>
+  <select id="q6" name="question6" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: Customer data is not used to segment, target, or personalize customer interactions.</option>
+  <option value="2">: Customer data is used to segment customers, but not to target or personalize customer interactions.</option>
+  <option value="3">: Customer data is used to segment, target, and personalize customer interactions, and to inform decision-making and strategy.</option>
+</select>
+  
+ <label for="q7">How does your company measure and track customer success at a granular level?</label>
+<select id="q7" name="question7" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: Customer success metrics are not measured or tracked.</option>
+  <option value="2">: Basic customer success metrics are measured and tracked, such as churn rate.</option>
+  <option value="3">: A variety of customer success metrics are measured, tracked and predicted, such as Net Retention Rate (NRR), Gross Retention Rate (GRR), and churn rate, and are used to inform decision-making and strategy.</option>
+</select>
+
+<label for="q8">How does your company determine the actions for a customer success manager to improve customer health?</label>
+<select id="q7" name="question7" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: Customer success metrics are not measured or tracked.</option>
+  <option value="2">: Basic customer success metrics are measured and tracked, such as churn rate.</option>
+  <option value="3">: A variety of customer success metrics are measured, tracked and predicted, such as Net Retention Rate (NRR), Gross Retention Rate (GRR), and churn rate, and are used to inform decision-making and strategy.</option>
+</select>
+
+<h3>Accountability and Process</h3>
+  <label for="q8">Who holds accountability for retention?</label>
+<select id="q8" name="question8" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: The company's objectives are centered on overall expansion with no particular customer objectives.</option>
+  <option value="2">: The company's goals are aligned with customer goals such as net retention, and Customer Success (CS) is expected to deliver results.</option>
+  <option value="3">: A customer goal that measures the value customers receive, where each department has supporting goals</option>
+</select>
+
+<label for="q9">Who manages the renewal process?</label>
+<select id="q9" name="question9" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: The sales team manages all commercial activities, including renewals.</option>
+  <option value="2">: CS is responsible for renewals, while Sales handles upsells and cross-sells.</option>
+  <option value="3">: Success team owns renewals and upsells, Sales owns cross-sells</option>
+</select>
+
+ <label for="q10">What is the process for sharing customer information among different teams?</label>
+<select id="q10" name="question10" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: Sharing information is mainly done through sharing customer anecdotes and stories.</option>
+  <option value="2">: Formal feedback mechanisms such as customer advisory boards, all-hands meetings, and NPS are used.</option>
+  <option value="3">: Quantified experience data distributed monthly to Product, Sales and Marketing</option>
+</select>
+
+ <label for="q11">What factors are considered when determining the budget for customer success?</label>
+<select id="q11" name="question11" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: There are some general guidelines for metrics, such as one CSM for every $2M in annual recurring revenue or 50 customers per CSM.</option>
+  <option value="2">: ROI is calculated, such as $x additional CS budget leading to $y in retention rate improvements.</option>
+  <option value="3">: Company value: like x% retention improvement leads to $y company valuation increase</option>
+</select>
+
+ <label for="q12">What methods are used to identify potential upselling opportunities?</label>
+<select id="q12" name="question12" required>
+  <option value="">Select an assessment</option>
+  <option value="1">: There is a hope that CSMs will spot opportunities during the quarterly business review.</option>
+  <option value="2">: The company measures Customer Success Qualified Leads (CSQL) and rewards CSMs for creating them.</option>
+  <option value="3">: Customers are automatically offered upsells when high value is detected, standard playbook questions are asked to find cross-sells, or upsell opportunities are identified by ML/AI.</option>
+</select>
+
+
+  <button type="submit">Submit</button>
+</form>
+
+<div id="score"></div>
+
+<script>
+function downloadResult(filename, text) {
+const element = document.createElement('a');
+element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+element.setAttribute('download', filename);
+element.style.display = 'none';
+document.body.appendChild(element);
+element.click();
+document.body.removeChild(element);
+}
+
+function getMaturityLevel(totalScore) {
+if (totalScore >= 1 && totalScore <= 10) {
+return 'Not Mature';
+} else if (totalScore >= 11 && totalScore <= 20) {
+return 'Somewhat Mature';
+} else if (totalScore >= 21 && totalScore <= 30) {
+return 'Mature';
+} else {
+return 'Very Mature';
+}
+}
+
+function getAdvice(maturityLevel) {
+switch (maturityLevel) {
+case 'Not Mature':
+return 'You should invest in...';
+case 'Somewhat Mature':
+return 'You might consider...';
+case 'Mature':
+return 'Keep up the good work, but consider...';
+case 'Very Mature':
+return 'Congratulations! Continue to...';
+default:
+return '';
+}
+}
+
+document.getElementById('customer-success-form').addEventListener('submit', function(event) {
+event.preventDefault();
+
+// ... (the rest of the code that calculates the total score) ...
+
+const totalScore = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 + q10 + q11 + q12;
+const maturityLevel = getMaturityLevel(totalScore);
+const advice = getAdvice(maturityLevel);
+
+const resultText = `Total Score: ${totalScore}\nMaturity Level: ${maturityLevel}\nAdvice: ${advice}`;
+document.getElementById('score').textContent = resultText.replace(/\n/g, '<br>');
+
+// Call the downloadResult function to create and download a text file with the result
+downloadResult('result.txt', resultText);
+});
+</script>
+
